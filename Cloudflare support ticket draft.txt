@@ -1,0 +1,18 @@
+Subject: Request to enable “Email (Send Email)” binding for my Worker
+
+Hello,
+
+I’m trying to use Cloudflare’s native Email Workers feature to send form submissions from my website, but when I open Workers → Settings → Add Binding, I only see the D1 Database and KV options. The “Email (Send Email)” binding is missing.
+
+Could you please enable the “Email (Send Email)” binding for my account?
+
+My Worker name: ccmg-mailer  
+My account email: enrico.alvares@gmail.com  
+My Cloudflare account ID: 3fd7e0d3dbaf3d0d9888a04f7b3e2110
+
+Thank you — this will allow my contact form to send messages through Cloudflare’s email system as intended.
+
+Best regards,  
+Enrico Alvares
+
+
