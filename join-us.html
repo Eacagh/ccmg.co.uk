@@ -23,7 +23,7 @@
 <p class="lede">We’d love to hear from you. Whether you already play in an ensemble or are hoping to form one, CCMG offers tailored coaching sessions to help you and your group make the most of your music-making.</p>
     <p>You can use the form below to get in touch — to enquire about coaching, discuss your ensemble’s needs, or simply find out more about how CCMG works.</p>
 <div class="card">
-  <form id="contact-form" action="https://hidden-pond-a6fd.enrico-alvares.workers.dev/submit" method="POST">
+  <form id="contact-form" action="https://hidden-pond-a6fd.enrico-alvares.workers.dev" method="POST">
   <label for="name">Name:</label>
   <input type="text" id="name" name="name" required><br><br>
 
@@ -35,6 +35,13 @@
 
   <button type="submit">Send</button>
 </form>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("success") === "1") {
+    alert("Message sent successfully!");
+  }
+</script>
 
 <p id="status"></p>
 
