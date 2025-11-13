@@ -43,29 +43,6 @@
   }
 </script>
 
-<p id="status"></p>
-
-<script>
-  document.getElementById("contact-form").addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const data = {
-      name: form.name.value,
-      email: form.email.value,
-      message: form.message.value
-    };
-    const response = await fetch(form.action, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-    document.getElementById("status").textContent =
-      response.ok ? "✅ Message sent!" : "❌ Something went wrong.";
-  });
-</script>
-  
-
-
 <p class="note">You should see a “Message sent successfully!” message when your form has been delivered.</p>
 </div>
 <p>Prefer to write directly? Email us at <a href="mailto:info@ccmg.co.uk">info@ccmg.co.uk</a>.</p>
