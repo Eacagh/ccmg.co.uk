@@ -55,6 +55,10 @@ main {
 }
 
 /* ---- Header / Nav ---- */
+nav.navbar {
+  display: block;            /* <-- REQUIRED on some browsers */
+}
+
 .navbar {
   background: var(--navy);
   padding: 14px 0;
