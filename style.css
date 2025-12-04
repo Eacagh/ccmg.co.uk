@@ -55,18 +55,33 @@ main {
 }
 
 /* ---- Header / Nav ---- */
-<header>
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="coaches.html">Coaches</a></li>
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="join-us.html">Join Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+.navbar {
+  background: var(--navy);
+  padding: 14px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+.navbar ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.navbar ul li a:hover {
+  color: var(--gold);
+}
 
 /* ---- Buttons ---- */
 .cta, button {
